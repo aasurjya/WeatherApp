@@ -1,12 +1,13 @@
-
 //npm packages
 const { response } = require("express");
 const express = require("express");
 const app = express();
 const https = require("https");
 const bodyParser = require("body-parser");
+const favicon = require('serve-favicon')
 // parse application/x-www-form-urlencoded
 app.use(bodyParser.urlencoded({ extended: true }))
+app.use(favicon(__dirname + '/images/favicon (3).ico'))
 
 
 
